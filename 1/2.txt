@@ -1,0 +1,49 @@
+package mar4;
+
+import java.util.Scanner;
+
+public class  soltckt {
+
+	public static void main(String[] args) {
+int personcount;
+float salestotal;
+int personage=0;
+char anotherperson;
+personcount=1;
+salestotal=0;
+anotherperson = 'y';
+while(anotherperson=='y')
+{
+Scanner obj=new Scanner(System.in);
+	System.out.println("person"+personcount);
+	System.out.println("how old are you");
+personage=obj.nextInt();	
+	if(personage<18)
+	{
+		salestotal=salestotal+15;
+	}
+	else
+	{
+		salestotal=salestotal+30;
+	}
+	System.out.println("anotherperson?(y/n)");
+	anotherperson=obj.next().charAt(0);
+	while(anotherperson!='y' && anotherperson!='n')
+	{
+		System.out.println("anoyherperson(y/n)");
+		anotherperson=obj.next().charAt(0);
+		
+	}
+	if (anotherperson=='y')
+	{
+		personcount++;
+	}
+	
+}
+	System.out.println("count"+personcount);
+	
+	
+		System.out.println("total"+salestotal);
+	
+}
+}
