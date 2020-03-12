@@ -1,0 +1,44 @@
+import java.util.*;
+public class searching 
+{
+
+	public static void main(String args[])
+	{
+		  Scanner sc = new Scanner(System.in);
+		  
+		  System.out.print("Input first subject: ");
+		  int num1 = sc.nextInt();
+		   
+		  System.out.print("Input second subject: ");
+		  int num2 = sc.nextInt();
+		   
+		  System.out.print("Input third subject: ");
+		  int num3 = sc.nextInt();
+		   
+		  System.out.print("Input fourth subject: ");
+		  int num4 = sc.nextInt();
+		  
+		  System.out.print("Enter fifth subject: ");
+		  int num5 = sc.nextInt();
+		  int t=(num1 + num2 + num3 + num4 + num5) / 5;
+		   
+		  System.out.println("Average of five numbers is: " + t);
+		  if (t>=91)
+		
+		      System.out.println("A Grade");
+		  
+		  else if(t>=81)
+			  
+			  System.out.println("B Grade");
+		  
+		  else if(t>=70)
+		  
+		     System.out.println("C Grade");
+		        
+		  else
+		  
+		       System.out.println("Fail");  
+		 }
+		
+
+	}
